@@ -11,10 +11,10 @@ body{
     align-content: center;
 }
 .headtitle {
+    text-align: center;
     justify-self: center;
     font-family:Helvetica;
     font-weight:bold;
-    font-size: clamp(20px,8vw,80px);
+    font-size: clamp(20px,8vw,100px);
     color:white;
-   
-}
+   }
