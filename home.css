@@ -18,3 +18,35 @@ body{
     font-size: clamp(20px,8vw,100px);
     color:white;
    }
+   section {
+    display: flex;
+    flex-direction: row;
+    margin: 5vw 0 5vw 0;
+   }
+
+.container {
+border: 1vw solid rgb(206, 206, 206);
+box-shadow: 2vw 2vw 0px rgba(0, 0, 0,0.5);
+width:40%;
+ margin: 0.5vw 5vw 0.5vw 5vw;
+ background-color: rgb(65, 65, 65) ;
+ padding: 1vw;
+}
+.title {
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-family:Helvetica;
+    font-weight:bold;
+    font-size:  clamp(20px,7vw,90px);
+    color:white; 
+}
+.text {
+   text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-family:Helvetica;
+    font-weight:bold;
+    font-size:  clamp(15px,2vw,90px);
+    color:white;  
+}
