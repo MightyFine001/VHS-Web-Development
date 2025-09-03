@@ -6,11 +6,12 @@ body{
 .header {
     display: flex;
     flex-direction: row;
-    height:clamp(200px,24vw,800px);
+    height:clamp(250px,50vw,800px);
     background-repeat: no-repeat;
     width:100%;
     justify-content: space-between;
     background-color:rgb(44,145,225) ;
+    padding-bottom:10vw;
 }
 .headtitle {
     margin-left:4vw;
@@ -31,7 +32,7 @@ align-self: center;
    .headerimage {
     aspect-ratio:1/1;
     min-height:50px;
-    height: 1vw;
+    height: 5vw;
     margin-right:0vw;
     animation: FadeIn 0.5s ease-out forwards;
     opacity:0;
@@ -47,31 +48,52 @@ align-self: center;
     }
    section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height:auto;
     width:100vw;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
 
    }
   
 
 .container {
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
  background-color: rgb(58, 166, 255) ;
  animation: EaseIn 0.5s ease-in-out forwards;
+ justify-content: center;
  opacity:0;
  transform: translateY(20px);
+ margin:-5vh 2vw 10vh 2vw;
+ width:45vw;
+ height:65vw;
+ min-height: 350px;
+position: relative;
+border-radius: 10%;
  
 }
-.container2 {
-    display: flex;
-    flex-direction: row;
- background-color: rgb(44,145,225) ;
- animation: EaseIn 0.5s ease-in-out forwards;
- opacity:0;
- transform: translateY(20px);
- 
+.images {
+    background-color: rgb(120, 194, 255);
+    position: absolute;
+    top:0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    align-self: center;
+     aspect-ratio: 1/1;
+    width:50%;
+   
+}
+.images2 {
+      position: absolute;
+    top:0;
+    transform: translateY(-50%);
+    background-color: rgb(120, 194, 255);
+    border-radius: 50%;
+    align-self: center;
+    aspect-ratio: 1/1;
+    width:50%
 }
 @keyframes EaseIn {
 to {
@@ -82,21 +104,23 @@ to {
 
 .text {
    text-align: center;
-    align-self: center;
+   margin-top:1vw;
     justify-self:center;
     font-family:Arial;
-    font-size:  clamp(12px,2vw,90px);
+    font-size:  clamp(13px,2.5vw,90px);
     color:white;  
     padding:2vw;
-    width:50%
+    position:absolute;
+    top:12vw;
 }
+
 ul {
     text-align: left;
 }
 footer {
     background-color: rgb(58, 166, 255) ;
     width:100%;
-    height:5vh;
+    height:6vh;
     min-height:50px;
     display:flex;
     flex-direction: row;
@@ -114,7 +138,8 @@ footer {
 .socials {
     right:2vw;
     aspect-ratio: 1/1;
-    height:3vh;
+    height:5vw;
+    max-height: 40px;
     min-height: 20px;
     margin-right:2vw;
     transition: transform 0.5s ease-out;
