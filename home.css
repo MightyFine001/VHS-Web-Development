@@ -181,7 +181,7 @@ footer {
     right:2vw;
     aspect-ratio: 1/1;
     height:5vw;
-    max-height: 80px;
+    max-height: 40px;
     min-height: 20px;
     margin-right:2vw;
     transition: transform 0.5s ease-out;
