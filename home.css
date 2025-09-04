@@ -1,7 +1,9 @@
 body{
     margin:0 0 0 0;
     overflow-x: hidden;
-    background-color: rgb(226, 242, 255);
+    background-color: rgb(255, 245, 190);
+    height:auto;
+    min-height:100vh;
 }
 .header {
     display: flex;
@@ -10,7 +12,7 @@ body{
     background-repeat: no-repeat;
     width:100%;
     justify-content: space-between;
-    background-color:rgb(44,145,225) ;
+    background-color:rgb(255, 217, 0) ;
     padding-bottom:10vw;
 }
 .headtitle {
@@ -18,8 +20,9 @@ body{
     text-align: left;
     align-self: center;
     font-family:Arial;
-    font-size: clamp(20px,6vw,90px);
-    color:rgb(255, 255, 255);
+    font-size: clamp(20px,7vw,90px);
+    font-weight: bold;
+    color:white;
     width:50vw;
     animation: EaseIn 0.5s ease-in-out forwards;
  opacity:0;
@@ -68,10 +71,9 @@ align-self: center;
  transform: translateY(20px);
  margin:-5vh 2vw 10vh 2vw;
  width:45vw;
- height:65vw;
- min-height: 350px;
+ height:50vw;
+ min-height: 250px;
 position: relative;
-border-radius: 10%;
  
 }
 .images {
@@ -107,7 +109,7 @@ to {
    margin-top:1vw;
     justify-self:center;
     font-family:Arial;
-    font-size:  clamp(13px,2.5vw,90px);
+    font-size:  clamp(10px,2vw,90px);
     color:white;  
     padding:2vw;
     position:absolute;
@@ -120,7 +122,7 @@ ul {
 footer {
     background-color: rgb(58, 166, 255) ;
     width:100%;
-    height:6vh;
+    height:6vw;
     min-height:50px;
     display:flex;
     flex-direction: row;
@@ -139,7 +141,7 @@ footer {
     right:2vw;
     aspect-ratio: 1/1;
     height:5vw;
-    max-height: 40px;
+    max-height: 80px;
     min-height: 20px;
     margin-right:2vw;
     transition: transform 0.5s ease-out;
