@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     background-color: rgb(255, 213, 75) ;
     padding-bottom:10vw;
+    padding-right:5vw;
     z-index:1;
 }
 .headtitle {
