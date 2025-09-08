@@ -121,13 +121,13 @@ ul {
 footer {
     background-color: rgb(58, 166, 255) ;
     width:100vw;
-    height:6vw;
-    min-height:50px;
+    height:8vw;
+    min-height:100px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 2vw;
+    
 }
 .textfooter {
     display: flex;
