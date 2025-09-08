@@ -127,7 +127,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: solid 2vw rgb(58, 166, 255);
 }
 .textfooter {
     display: flex;
