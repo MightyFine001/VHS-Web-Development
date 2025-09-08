@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     background-color: rgb(255, 213, 75) ;
     padding-bottom:10vw;
+    z-index:1;
 }
 .headtitle {
     margin-left:4vw;
@@ -30,6 +31,7 @@ body::-webkit-scrollbar {
     animation: EaseIn 0.5s ease-in-out forwards;
  opacity:0;
  transform: translateY(10px);
+ z-index:5;
    }
 .headimage {
 align-self: center;
@@ -55,74 +57,33 @@ align-self: center;
    .section {
     display: flex;
     flex-direction: row;
-    height:auto;
     width:100vw;
-    height:fit-content;
-    justify-content: center;
-    align-items: center;
+    height:auto;
     background-color:white;
     z-index:3;
-    flex: 1;
 
    }
   
-.section2 {
-    background-color:rgb(255, 213, 75);
-    width:100vw;
-    height: 10vw;
-    position:relative;
-    bottom:0;
-    margin-top: 400px;
-}
+
 .container {
     
     display: flex;
-    flex-direction: column;
- background-color: rgb(58, 166, 255) ;
- animation: EaseIn 0.5s ease-in-out forwards;
- justify-content: center;
+    flex-direction: row;
+  animation: EaseIn 0.5s ease-in-out forwards;
  opacity:0;
- transform: translateY(20px);
- margin:-4vh 2vw 10vh 2vw;
- width:45vw;
- height:45vw;
- min-height: 220px;
- max-height:900px;
 position: relative;
+margin-left:5vw;
+margin-top:10vw;
+transform: translateY(20px);
+width:90vw;
  
 }
-.container2 {
- background-color: rgb(255, 213, 75);
- animation: EaseIn 0.5s ease-in-out forwards;
- justify-content: center;
- opacity:0;
- transform: translateY(20px);
- width:100vw;
- height:50vw;
- max-height:500px;
 
- 
-}
-.images {
-    background-color: rgb(120, 194, 255);
-    position: absolute;
-    top:0;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    align-self: center;
-     aspect-ratio: 1/1;
-    width:50%;
-   
-}
-.images2 {
-      position: absolute;
-    top:0;
-    transform: translateY(-50%);
-    background-color: rgb(120, 194, 255);
-    border-radius: 50%;
-    align-self: center;
-    aspect-ratio: 1/1;
-    width:50%
+.body1 {
+    height:auto;
+    padding-bottom:35vh;
+    width:50vw;
+    background-color: rgb(0,95,205);
 }
 @keyframes EaseIn {
 to {
@@ -130,29 +91,25 @@ to {
     transform: translateY(0);
 }
 }
-
+.sideimage {
+    aspect-ratio: 1/1;
+    width:45vw;
+}
 .text {
    text-align: center;
-   margin-top:1vw;
     justify-self:center;
     font-family:Arial;
     font-size:  clamp(10px,2vw,35px);
     color:white;  
     padding:2vw;
-    position:absolute;
     top:12vw;
+    background-color: rgb(58, 166, 255) ;
+
+ 
+ width:45vw;
+ height:45vw;
 }
-.text2 {
-   text-align: center;
-    justify-self:center;
-    font-family:Arial;
-    font-size:  clamp(12px,4vw,35px);
-    color:white;  
-    padding:2vw;
-    position:absolute;
-    top:12vw;
-     margin-top: -10vw;
-}
+
 
 ul {
     text-align: left;
@@ -166,12 +123,17 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border: solid 2vw rgb(58, 166, 255);
 }
 .textfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   margin-left:2vw;
    text-align: left;
     font-family:Arial;
-    font-size:  clamp(11px,2vw,25px);
+    font-weight: bold;
+    font-size:  clamp(11px,3.2vw,35px);
     color:rgb(255, 255, 255);  
     width:50%;
 }
@@ -179,8 +141,19 @@ footer {
     right:2vw;
     aspect-ratio: 1/1;
     height:5vw;
-    max-height: 40px;
+    max-height: 80px;
     min-height: 20px;
+    margin-right:3vw;
+    transition: transform 0.5s ease-out;
+    display: inline-block;
+
+}
+.logo {
+    right:2vw;
+    aspect-ratio: 1/1;
+    height:5vw;
+    max-height: 100px;
+    min-height: 40px;
     margin-right:2vw;
     transition: transform 0.5s ease-out;
     display: inline-block;
@@ -193,5 +166,8 @@ footer {
 .images {
     aspect-ratio:1/1;
     width:50%;
+}
+.backgroundfor2 {
+    background-color: rgb(255, 213, 75);
 }
 
